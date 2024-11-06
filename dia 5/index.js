@@ -1,20 +1,22 @@
-let numero1 = parseint(prompt("insira um numero"))
-let numero2 = parseint(prompt("insira um segundo numero"))
-let opcaoMat = parseint(prompt("insira a operação desejada:" + "\n1 = +;\n2= -; \n3 = *; \n4 = /" ))
+let num1 = parseInt(prompt("insira um numero"))
+let num2 = parseInt(prompt("insira um segundo numero"))
+let opcao = parseInt(prompt("insira a operação desejada:" + "\n1 = + ; \n2= - ; \n3 = * ; \n4 = /"))
 
+switch (opcao) {
+    case 1: 
+    console.log(num1 + " + " + num2 + " = " + (num1 + num2))
+      break;
 
-switch (opcaoMat) {
-    case 1:
-          console.log(numero1 + "+" numero2 + "=" (numero1 + numero2))
-          break; 
     case 2:
-          console.log(numero1 + "-" numero2 + "=" (numero1 - numero2))
-          break;
-    case 3:
-          console.log(numero1 + "*" numero2 + "=" (numero1 * numero2))
-          break;
-    case 4:
-          console.log(numero1 + "/" numero2 + "=" (numero1 / numero 2))
-          break;
+      console.log(num1 + " - " + num2 + " = " + (num1 - num2))
+      break;
 
+    case 3:
+      console.log(num1 + " * " + num2 + " = " + (num1 * num2))
+      break;
+
+    default:
+      console.log(num1 + " / " + num2 + " = " + (num1 / num2))
+      break;
 }
+    
